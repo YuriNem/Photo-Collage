@@ -1,2 +1,2 @@
 # Photo-Collage
-Photo collage with responsive web design.
+### Photo collage with responsive web design.
