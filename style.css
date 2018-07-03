@@ -24,12 +24,13 @@ h1 {
 }
 
 img {
-    width: 360px;
-    height: 240px;
+    width: 100%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
     .collage {
+        display: grid;
         grid-template-columns: 240px 240px 240px;
         grid-template-rows: 160px 160px 160px;
         grid-gap: 5px;
@@ -43,8 +44,8 @@ img {
     }
     
     img {
-        width: 240px;
-        height: 160px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -63,7 +64,7 @@ img {
     }
     
     img {
-        width: 240px;
-        height: 160px;
+        width: 100%;
+        max-width: 100%;
     }
 }
