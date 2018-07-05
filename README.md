@@ -1,2 +1,6 @@
 # Photo-Collage
-### Photo collage with Responsive Web Design and CSS Grid.
+### Photo collage with Responsive Web Design on CSS Grid.
+
+Used:
+* [SASS](https://sass-scss.ru/)
+* [BEM](https://ru.bem.info/)

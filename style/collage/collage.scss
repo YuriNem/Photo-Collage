@@ -1,0 +1,8 @@
+@mixin collage($amount, $column, $row, $gap, $bottom) {
+    display: grid;
+    grid-template-columns: repeat($amount, $column);
+    grid-template-rows: repeat($amount, $row);
+    grid-gap: $gap;
+    margin-bottom: $bottom;
+    background-color: black;
+}
