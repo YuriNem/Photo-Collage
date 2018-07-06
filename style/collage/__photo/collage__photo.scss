@@ -2,3 +2,38 @@
     width: $width;
     height: $height;
 }
+
+$w: 360px;
+$h: 240px;
+
+.collage__photo {
+    @include photo($w, $h);
+}
+
+@keyframes scale {
+    to { transform: scale(2, 2); }
+}
+
+.collage__photo:hover {
+    animation: scale 5s;
+    animation-fill-mode: forwards;
+}
+
+$w: $w * 2/3;
+$h: $h * 2/3;
+
+$mw: 1024px;
+
+@media screen and (max-width: $mw) {
+    .collage__photo {
+        @include photo($w, $h);
+    }
+}
+
+$mw: $mw / 2 ;
+
+@media screen and (max-width: $mw) {  
+    .collage__photo {
+        @include photo($w, $h);
+    }
+}

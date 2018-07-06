@@ -6,3 +6,36 @@
     margin-bottom: $bottom;
     background-color: black;
 }
+
+$a: 3;
+$w: 360px;
+$h: 240px;
+$g: 10px;
+$b: 20px;
+
+.collage {
+    @include collage($a, $w, $h, $g, $b);
+}
+
+$w: $w * 2/3;
+$h: $h * 2/3;
+$g: $g / 2;
+$b: $b / 2;
+
+$mw: 1024px;
+
+@media screen and (max-width: $mw) {
+    .collage {
+        @include collage($a, $w, $h, $g, $b);
+    }
+}
+
+$a: $a / 3;
+
+$mw: $mw / 2 ;
+
+@media screen and (max-width: $mw) {
+    .collage {
+        @include collage($a, $w, $h, $g, $b);
+    }   
+}

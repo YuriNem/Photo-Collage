@@ -2,5 +2,5 @@
 ### Photo collage with Responsive Web Design on CSS Grid.
 
 Used:
-* [SASS](https://sass-scss.ru/)
+* [Sass](https://sass-scss.ru/)
 * [BEM](https://ru.bem.info/)

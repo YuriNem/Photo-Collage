@@ -2,6 +2,49 @@
   font-family: 'Courier New', Courier, monospace;
   color: white; }
 
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: repeat(3, 240px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  background-color: black; }
+
+@media screen and (max-width: 1024px) {
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: repeat(3, 160px);
+    grid-gap: 5px;
+    margin-bottom: 10px;
+    background-color: black; } }
+@media screen and (max-width: 512px) {
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(1, 240px);
+    grid-template-rows: repeat(1, 160px);
+    grid-gap: 5px;
+    margin-bottom: 10px;
+    background-color: black; } }
+.collage__photo {
+  width: 360px;
+  height: 240px; }
+
+@keyframes scale {
+  to {
+    transform: scale(2, 2); } }
+.collage__photo:hover {
+  animation: scale 5s;
+  animation-fill-mode: forwards; }
+
+@media screen and (max-width: 1024px) {
+  .collage__photo {
+    width: 240px;
+    height: 160px; } }
+@media screen and (max-width: 512px) {
+  .collage__photo {
+    width: 240px;
+    height: 160px; } }
 .collage__photo-src {
   width: 100%;
   max-width: 100%; }
@@ -14,51 +57,5 @@ body {
   display: grid;
   justify-items: center;
   background-color: black; }
-
-.collage {
-  display: grid;
-  grid-template-columns: repeat(3, 360px);
-  grid-template-rows: repeat(3, 240px);
-  grid-gap: 10px;
-  margin-bottom: 20px;
-  background-color: black; }
-
-.collage__photo {
-  width: 360px;
-  height: 240px; }
-
-@keyframes scale {
-  from {
-    transform: scale(1, 1); }
-  to {
-    transform: scale(2, 2); } }
-.collage__photo:hover {
-  animation: scale 5s;
-  animation-fill-mode: forwards; }
-
-@media screen and (max-width: 1024px) {
-  .collage {
-    display: grid;
-    grid-template-columns: repeat(3, 240px);
-    grid-template-rows: repeat(3, 160px);
-    grid-gap: 5px;
-    margin-bottom: 10px;
-    background-color: black; }
-
-  .collage__photo {
-    width: 240px;
-    height: 160px; } }
-@media screen and (max-width: 512px) {
-  .collage {
-    display: grid;
-    grid-template-columns: repeat(1, 240px);
-    grid-template-rows: repeat(1, 160px);
-    grid-gap: 5px;
-    margin-bottom: 10px;
-    background-color: black; }
-
-  .collage__photo {
-    width: 240px;
-    height: 160px; } }
 
 /*# sourceMappingURL=style.css.map */
